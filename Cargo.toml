@@ -1,0 +1,21 @@
+[package]
+name = "umsg-port"
+version = "0.2.1"
+authors = ["Jaemin Kim <geminik23@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+env_logger = "0.9"
+dotenv = "0.14"
+futures = "0.3"
+async-std = {version="1.7", features=["attributes"]}
+thiserror = "1.0"
+crossbeam="0.8"
+serde = {version = "1.0", features=["derive"]}
+serde_json = "1.0"
+async-amqp = "1.1.0"
+lapin={version="1.6"}
+uuid = {version="0.8", features=["v4"]}
